@@ -468,15 +468,27 @@
       border-radius: 20px; padding: 3rem;
     }
     .contact-box p { color: var(--muted); margin-bottom: 2rem; line-height: 1.8; }
-    .kakao-btn {
-      display: inline-flex; align-items: center; gap: .7rem;
-      padding: 1rem 2.5rem;
-      background: #FEE500; color: #191919;
+    .contact-actions {
+      display: flex; flex-direction: column; gap: .8rem;
+      max-width: 340px; margin: 0 auto;
+    }
+    .contact-btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: .7rem;
+      padding: 1rem 1.5rem; width: 100%;
       border: none; border-radius: 10px;
       font-size: 1rem; font-weight: 700; cursor: pointer; text-decoration: none;
       transition: transform .2s, opacity .2s;
     }
+    .email-btn {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #fff;
+    }
+    .kakao-btn {
+      background: #FEE500; color: #191919;
+      transition: transform .2s, opacity .2s;
+    }
     .kakao-btn:hover { transform: translateY(-2px); opacity: .9; }
+    .contact-btn:hover { transform: translateY(-2px); opacity: .92; }
 
     /* ── FOOTER ── */
     footer {
@@ -915,12 +927,14 @@
     <p class="section-desc" data-aos="fade-up" data-aos-delay="100">기업 출강, 개인 코칭, 워크샵 모두 문의 가능합니다.</p>
     <div class="contact-box" data-aos="fade-up" data-aos-delay="200">
       <p>문의 내용(교육 대상, 인원, 희망 일정)을 남겨주시면<br />빠르게 답변 드리겠습니다.</p>
-      <a href="mailto:hello@aible-edu.co.kr" class="kakao-btn" target="_blank" style="margin-bottom:.6rem;">
-        📧 hello@aible-edu.co.kr
-      </a>
-      <a href="https://open.kakao.com/o/sALDb3ki" class="kakao-btn" target="_blank">
-        💬 카카오 오픈채팅 문의
-      </a>
+      <div class="contact-actions">
+        <a href="mailto:hello@aible-edu.co.kr" class="contact-btn email-btn" target="_blank">
+          📧 hello@aible-edu.co.kr
+        </a>
+        <a href="https://open.kakao.com/o/sALDb3ki" class="contact-btn kakao-btn" target="_blank">
+          💬 카카오 오픈채팅 문의
+        </a>
+      </div>
     </div>
   </div>
 </section>
