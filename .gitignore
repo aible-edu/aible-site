@@ -1,0 +1,11 @@
+# Internal dev notes (Claude working docs)
+CLAUDE.md
+
+# Local Netlify config
+.netlify/
+
+# macOS
+.DS_Store
+
+# Unused local assets
+ChatGPT Image*.png
