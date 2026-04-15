@@ -480,9 +480,11 @@
       transition: transform .2s, opacity .2s;
     }
     .email-btn {
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      color: #fff;
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
     }
+    .email-btn:hover { border-color: var(--accent); color: var(--accent); }
     .kakao-btn {
       background: #FEE500; color: #191919;
       transition: transform .2s, opacity .2s;
