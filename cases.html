@@ -3,833 +3,330 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>교육 이력 — Aible · AI 실무 교육</title>
-  <meta name="description" content="Aible이 진행한 기업 AI 교육 사례와 수강생 후기. NPS·만족도 등 실제 결과 데이터 공개." />
-  <meta name="keywords" content="AI 교육 사례, 기업 AI 교육 후기, AI 교육 NPS, 라이브커머스 AI 교육, SKT AI 교육, 임직원 AI 교육 후기, Aible 교육 이력" />
-  <meta name="naver-site-verification" content="27991cae3ee57626ce9002bf22f09a22590cbdad" />
+  <title>강의 사례 — Aible · AI 실무 교육 이력</title>
+  <meta name="description" content="Aible이 진행한 강의 사례와 출강 이력. 익명 처리된 사례 카드와 후기를 확인하세요." />
+  <meta name="keywords" content="강의 사례, AI 교육 이력, B2B 출강, AI 강의 후기, Aible" />
   <link rel="canonical" href="https://aible-edu.co.kr/cases.html" />
 
-  <!-- OG Tags (카카오/SNS 링크 공유 미리보기) -->
+  <!-- OG Tags -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://aible-edu.co.kr/cases.html" />
-  <meta property="og:title" content="교육 이력 — Aible · AI 실무 교육" />
-  <meta property="og:description" content="Aible이 진행한 기업 AI 교육 사례와 수강생 후기. NPS·만족도 등 실제 결과 데이터 공개." />
+  <meta property="og:title" content="강의 사례 — Aible · AI 실무 교육 이력" />
+  <meta property="og:description" content="Aible이 진행한 강의 사례와 출강 이력. 익명 처리된 사례 카드와 후기를 확인하세요." />
   <meta property="og:image" content="https://aible-edu.co.kr/og-image.jpg" />
   <meta property="og:locale" content="ko_KR" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="교육 이력 — Aible · AI 실무 교육" />
-  <meta name="twitter:description" content="Aible이 진행한 기업 AI 교육 사례와 수강생 후기. NPS·만족도 등 실제 결과 데이터 공개." />
-  <meta name="twitter:image" content="https://aible-edu.co.kr/og-image.jpg" />
+  <!-- Pretendard + Inter -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" />
 
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" integrity="sha384-XaKgYnt6PIBoBigfHaTrAOgRhRwSi+iaP3GW1cqGAh7EglmJVPyJefokOWttsm0+" crossorigin="anonymous" />
-  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --bg:       #0a0a0f;
-      --bg2:      #111118;
-      --card:     #16161f;
-      --border:   #2a2a3a;
-      --accent:   #7c6aff;
-      --accent2:  #00d4ff;
-      --text:     #e8e8f0;
-      --muted:    #888899;
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Noto Sans KR', 'Inter', sans-serif;
-      line-height: 1.6;
-    }
-
-    /* ── NAV ── */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      display: flex; align-items: center; justify-content: space-between;
-      height: 72px; padding: 0 6%;
-      background: rgba(10,10,15,0.85);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-    }
-    .logo-wrap { display: flex; align-items: center; gap: .75rem; }
-    .logo {
-      font-family: 'Inter', sans-serif;
-      font-weight: 900; font-size: 1.5rem; letter-spacing: -0.5px;
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    }
-    .logo-divider {
-      width: 1px; height: 1.1rem;
-      background: var(--border);
-    }
-    .logo-tag {
-      font-size: .75rem; color: var(--muted);
-      font-weight: 400; letter-spacing: .3px;
-      white-space: nowrap;
-    }
-    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
-    .nav-links a {
-      color: var(--muted); text-decoration: none; font-size: .9rem; font-weight: 400;
-      transition: color .2s;
-    }
-    .nav-links a:hover { color: var(--text); }
-    .nav-links a.active { color: var(--text); font-weight: 600; }
-
-    /* ── PAGE HEADER (non-home pages) ── */
-    .page-header {
-      padding: 10rem 6% 5rem;
-      background-image:
-        linear-gradient(rgba(124,106,255,.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(124,106,255,.05) 1px, transparent 1px);
-      background-size: 60px 60px;
-      position: relative; overflow: hidden;
-      border-bottom: 1px solid var(--border);
-      word-break: keep-all;
-      overflow-wrap: break-word;
-    }
-    .page-header::before {
-      content: ''; position: absolute; top: -150px; right: -150px;
-      width: 500px; height: 500px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(124,106,255,.12) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .page-header__inner { position: relative; }
-    .page-header__label {
-      display: inline-block; padding: .4rem 1.1rem;
-      border: 1px solid var(--accent); border-radius: 20px;
-      color: var(--accent); font-size: .82rem; font-weight: 500;
-      margin-bottom: 1.5rem; letter-spacing: .5px;
-    }
-    .page-header h1 {
-      font-size: 2.8rem;
-      font-weight: 900;
-      line-height: 1.3;
-      letter-spacing: -0.5px;
-      margin-bottom: 1.2rem;
-      max-width: 720px;
-    }
-    .page-header h1 span {
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      white-space: nowrap;
-    }
-    .page-header p {
-      color: var(--muted);
-      font-size: 1.05rem;
-      line-height: 1.75;
-      max-width: 620px;
-    }
-    @media (max-width: 768px) {
-      .page-header { padding: 7rem 5% 3.5rem; }
-      .page-header h1 { font-size: 2rem; }
-      .page-header p { font-size: .98rem; }
-    }
-    .nav-cta {
-      padding: .55rem 1.4rem;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      color: #fff; border: none; border-radius: 6px;
-      font-size: .9rem; font-weight: 600; cursor: pointer; text-decoration: none;
-      transition: opacity .2s;
-    }
-    .nav-cta:hover { opacity: .85; }
-
-    /* ── HERO ── */
-    #hero {
-      min-height: 100vh;
-      display: grid; grid-template-columns: 1fr 1fr; align-items: center;
-      padding: 0 6%;
-      padding-top: 72px;
-      position: relative; overflow: hidden;
-      background-image:
-        linear-gradient(rgba(124,106,255,.07) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(124,106,255,.07) 1px, transparent 1px);
-      background-size: 60px 60px;
-    }
-    #particles {
-      position: absolute; top: 0; left: 0;
-      width: 100%; height: 100%;
-      pointer-events: none; z-index: 0;
-    }
-    #hero > *:not(#particles):not(.hero-glow):not(.hero-glow2) { position: relative; z-index: 1; }
-    .hero-glow {
-      position: absolute; top: -200px; right: -200px;
-      width: 700px; height: 700px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(124,106,255,.18) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .hero-glow2 {
-      position: absolute; bottom: -100px; left: 30%;
-      width: 500px; height: 500px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(0,212,255,.1) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .hero-tag {
-      display: inline-block;
-      padding: .35rem 1rem;
-      border: 1px solid var(--accent);
-      border-radius: 20px;
-      color: var(--accent); font-size: .82rem; font-weight: 500;
-      margin-bottom: 1.8rem; letter-spacing: .5px;
-    }
-    .hero h1 {
-      font-size: clamp(2.4rem, 5vw, 4.2rem);
-      font-weight: 900; line-height: 1.15;
-      letter-spacing: -1px;
-      margin-bottom: 1.5rem;
-    }
-    .hero h1 span {
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    }
-    .hero-sub {
-      font-size: 1.15rem; color: var(--muted);
-      max-width: 540px; margin-bottom: 1.6rem; font-weight: 300;
-    }
-    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
-    .hero-left { grid-column: 1; }
-    .hero-right {
-      grid-column: 2;
-      position: relative;
-      display: flex; align-items: center; justify-content: center;
-      padding-left: 3rem; min-height: 460px;
-    }
-    @keyframes float1 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
-    @keyframes float2 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-14px)} }
-    @keyframes float3 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
-    @keyframes blink { 0%,100%{opacity:.2;transform:translateY(0)} 50%{opacity:1;transform:translateY(-3px)} }
-
-    /* AI 채팅 메인 카드 */
-    .hmain-card {
-      background: rgba(18,18,28,.92);
-      border: 1px solid rgba(124,106,255,.35);
-      border-radius: 20px; padding: 1.6rem;
-      backdrop-filter: blur(16px);
-      width: 100%; max-width: 360px;
-      box-shadow: 0 0 60px rgba(124,106,255,.12), 0 20px 60px rgba(0,0,0,.4);
-      animation: float2 5s ease-in-out infinite;
-      position: relative; z-index: 2;
-    }
-    .hmain-topbar {
-      display: flex; align-items: center; gap: .45rem; margin-bottom: 1.2rem;
-    }
-    .hmain-dot { width: 10px; height: 10px; border-radius: 50%; }
-    .hmain-dot.r { background: #ff5f57; }
-    .hmain-dot.y { background: #febc2e; }
-    .hmain-dot.g { background: #28c840; }
-    .hmain-title-bar { font-size: .72rem; color: var(--muted); margin-left: .4rem; }
-    .hmsg {
-      border-radius: 12px; padding: .75rem 1rem;
-      font-size: .82rem; line-height: 1.6; margin-bottom: .7rem;
-    }
-    .hmsg.user {
-      background: rgba(124,106,255,.15); color: var(--text);
-      border: 1px solid rgba(124,106,255,.25); margin-left: 1.8rem;
-    }
-    .hmsg.ai {
-      background: rgba(0,212,255,.07); color: var(--text);
-      border: 1px solid rgba(0,212,255,.18); margin-right: 1.8rem;
-    }
-    .hmsg-label { font-size: .68rem; color: var(--muted); margin-bottom: .3rem; font-weight: 600; }
-    .htyping {
-      display: flex; gap: 5px; padding: .6rem 1rem;
-      margin-right: 1.8rem;
-    }
-    .htyping span {
-      width: 6px; height: 6px; border-radius: 50%;
-      background: var(--accent2);
-      animation: blink 1.2s ease-in-out infinite;
-    }
-    .htyping span:nth-child(2) { animation-delay: .2s; }
-    .htyping span:nth-child(3) { animation-delay: .4s; }
-
-    /* 플로팅 뱃지 */
-    .hbadge {
-      position: absolute;
-      background: rgba(14,14,22,.95);
-      border-radius: 14px; padding: .75rem 1.1rem;
-      backdrop-filter: blur(12px);
-      display: flex; align-items: center; gap: .7rem;
-      font-size: .82rem; font-weight: 600;
-      box-shadow: 0 8px 28px rgba(0,0,0,.35);
-      white-space: nowrap; z-index: 3;
-    }
-    .hbadge.b1 {
-      top: 6%; left: -10%;
-      border: 1px solid rgba(124,106,255,.4);
-      animation: float1 4s ease-in-out infinite;
-    }
-    .hbadge.b2 {
-      bottom: 10%; right: -8%;
-      border: 1px solid rgba(0,212,255,.35);
-      animation: float3 5s ease-in-out infinite;
-    }
-    .hbadge.b3 {
-      bottom: 36%; left: -12%;
-      border: 1px solid rgba(255,100,150,.3);
-      animation: float1 4.5s ease-in-out infinite .8s;
-    }
-    .hbadge.b4 {
-      top: 28%; right: -10%;
-      border: 1px solid rgba(255,180,0,.3);
-      animation: float2 4.8s ease-in-out infinite .5s;
-    }
-
-    /* AI 도구 스택 카드 */
-    .hstack-card {
-      margin-top: 1.2rem;
-      background: rgba(14,14,22,.9);
-      border: 1px solid var(--border);
-      border-radius: 14px; padding: .9rem 1.2rem;
-      backdrop-filter: blur(12px);
-      width: 100%; max-width: 360px;
-      animation: float3 6s ease-in-out infinite;
-    }
-    .hstack-label {
-      font-size: .68rem; color: var(--muted); font-weight: 600;
-      letter-spacing: .8px; text-transform: uppercase;
-      margin-bottom: .65rem;
-      display: flex; align-items: center; gap: .5rem;
-    }
-    .hstack-label::before {
-      content: '';
-      display: inline-block; width: 6px; height: 6px; border-radius: 50%;
-      background: #28c840;
-      box-shadow: 0 0 6px #28c840;
-    }
-    .hstack-tags { display: flex; flex-wrap: wrap; gap: .45rem; }
-    .hstack-tag {
-      padding: .28rem .75rem;
-      border-radius: 20px; font-size: .75rem; font-weight: 500;
-      border: 1px solid var(--border); color: var(--muted);
-      background: rgba(255,255,255,.03);
-      transition: border-color .2s, color .2s;
-    }
-    .hstack-tag:nth-child(1) { border-color: rgba(124,106,255,.4); color: var(--accent); }
-    .hstack-tag:nth-child(2) { border-color: rgba(0,212,255,.35); color: var(--accent2); }
-    .hstack-tag:nth-child(3) { border-color: rgba(255,180,0,.35); color: #ffc940; }
-    .hstack-tag:nth-child(4) { border-color: rgba(255,100,150,.3); color: #ff7a8a; }
-    .hbadge-icon { font-size: 1.2rem; }
-    .hbadge-text { line-height: 1.35; }
-    .hbadge-text small { display: block; font-size: .68rem; color: var(--muted); font-weight: 400; margin-top: .1rem; }
-    .btn-primary {
-      padding: .85rem 2rem;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      color: #fff; border: none; border-radius: 8px;
-      font-size: 1rem; font-weight: 600; cursor: pointer; text-decoration: none;
-      transition: transform .2s, opacity .2s;
-    }
-    .btn-primary:hover { transform: translateY(-2px); opacity: .9; }
-    .btn-secondary {
-      padding: .85rem 2rem;
-      background: transparent;
-      color: var(--text); border: 1px solid var(--border); border-radius: 8px;
-      font-size: 1rem; font-weight: 400; cursor: pointer; text-decoration: none;
-      transition: border-color .2s;
-    }
-    .btn-secondary:hover { border-color: var(--accent); }
-
-    /* ── SECTION COMMON ── */
-    section { padding: 7rem 6%; }
-    .section-label {
-      font-size: .8rem; font-weight: 600; letter-spacing: 2px;
-      color: var(--accent); text-transform: uppercase; margin-bottom: 1rem;
-    }
-    .section-title {
-      font-size: clamp(1.8rem, 3vw, 2.6rem);
-      font-weight: 700; margin-bottom: 1rem; line-height: 1.2;
-    }
-    .section-desc { color: var(--muted); max-width: 520px; font-size: 1rem; margin-bottom: 3.5rem; }
-
-    /* ── ABOUT ── */
-    #about { background: var(--bg2); }
-    .about-inner {
-      max-width: 860px; margin: 0 auto; text-align: center;
-    }
-    .about-inner > p { color: var(--muted); margin-bottom: 1.2rem; line-height: 1.8; text-align: left; }
-    .stats {
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;
-      margin-top: 2.5rem;
-    }
-    .stat-item {
-      background: var(--card); border: 1px solid var(--border);
-      border-radius: 16px; padding: 1.8rem 1rem; text-align: center;
-    }
-    .stat-num {
-      font-size: 2.2rem; font-weight: 900;
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    }
-    .stat-label { font-size: .82rem; color: var(--muted); margin-top: .4rem; }
-    .about-card {
-      background: var(--card); border: 1px solid var(--border);
-      border-radius: 16px; padding: 1.8rem; margin-top: 1.5rem; text-align: left;
-    }
-    .about-card h3 { font-size: 1rem; margin-bottom: 1rem; }
-    .tag-list { display: flex; flex-wrap: wrap; gap: .6rem; }
-    .tag {
-      padding: .4rem .9rem;
-      background: rgba(124,106,255,.12); border: 1px solid rgba(124,106,255,.3);
-      border-radius: 20px; font-size: .82rem; color: var(--accent);
-    }
-
-    /* ── SERVICES ── */
-    #services { background: var(--bg); }
-    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-    .service-card {
-      background: var(--card); border: 1px solid var(--border);
-      border-radius: 16px; padding: 2.2rem;
-      transition: border-color .3s, transform .3s;
-    }
-    .service-card:hover { border-color: var(--accent); transform: translateY(-4px); }
-    .service-icon {
-      margin-bottom: 1.2rem;
-    }
-    .service-icon svg {
-      width: 2.2rem; height: 2.2rem;
-      stroke: var(--accent); stroke-width: 1.5; fill: none;
-    }
-    .curriculum-note svg { width: 1.3rem; height: 1.3rem; stroke: var(--accent); stroke-width: 1.5; fill: none; flex-shrink: 0; }
-    .service-card h3 { font-size: 1.15rem; margin-bottom: .8rem; }
-    .service-card p { color: var(--muted); font-size: .92rem; line-height: 1.7; }
-
-    /* ── PORTFOLIO ── */
-    #portfolio { background: var(--bg2); }
-    .portfolio-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
-    .portfolio-card {
-      background: var(--card); border: 1px solid var(--border);
-      border-radius: 16px; padding: 2rem;
-      transition: border-color .3s;
-      position: relative; overflow: hidden;
-    }
-    .portfolio-card::before {
-      content: '';
-      position: absolute; top: 0; left: 0; right: 0; height: 3px;
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-      opacity: 0; transition: opacity .3s;
-    }
-    .portfolio-card:hover { border-color: var(--accent); }
-    .portfolio-card:hover::before { opacity: 1; }
-    .portfolio-tag {
-      display: inline-block; padding: .3rem .8rem;
-      background: rgba(0,212,255,.1); border: 1px solid rgba(0,212,255,.25);
-      border-radius: 20px; font-size: .75rem; color: var(--accent2);
-      margin-bottom: 1rem;
-    }
-    .portfolio-card h3 { font-size: 1.1rem; margin-bottom: .7rem; }
-    .portfolio-card p { color: var(--muted); font-size: .88rem; line-height: 1.7; }
-
-    /* ── CURRICULUM ── */
-    #curriculum { background: var(--bg); }
-    .curriculum-intro { max-width: 700px; margin-bottom: 2.5rem; color: var(--muted); line-height: 1.8; }
-    .level-tabs { display: flex; gap: .6rem; margin-bottom: 2.5rem; flex-wrap: wrap; }
-    .level-tab {
-      padding: .45rem 1.3rem;
-      border-radius: 20px; border: 1px solid var(--border);
-      background: transparent; color: var(--muted);
-      font-size: .85rem; cursor: pointer;
-      transition: all .2s; font-family: inherit;
-    }
-    .level-tab:hover { border-color: var(--accent); color: var(--text); }
-    .level-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
-    .courses-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-    .course-card {
-      background: var(--card); border: 1px solid var(--border);
-      border-radius: 16px; padding: 1.8rem;
-      transition: border-color .3s, transform .3s;
-      display: flex; flex-direction: column; gap: .6rem;
-    }
-    .course-card:hover { border-color: var(--accent); transform: translateY(-4px); }
-    .course-card[data-level] { display: flex; }
-    .course-card.hidden { display: none; }
-    .level-badge {
-      display: inline-block; padding: .25rem .75rem;
-      border-radius: 20px; font-size: .72rem; font-weight: 600;
-      margin-bottom: .4rem; width: fit-content;
-    }
-    .badge-basic { background: rgba(0,212,255,.12); color: var(--accent2); border: 1px solid rgba(0,212,255,.25); }
-    .badge-mid   { background: rgba(124,106,255,.12); color: var(--accent); border: 1px solid rgba(124,106,255,.25); }
-    .badge-adv   { background: rgba(255,100,120,.12); color: #ff7a8a; border: 1px solid rgba(255,100,120,.25); }
-    .course-duration { font-size: .78rem; color: var(--muted); }
-    .course-card h3 { font-size: 1rem; font-weight: 700; line-height: 1.4; }
-    .course-card > p { font-size: .83rem; color: var(--muted); line-height: 1.6; flex: 1; }
-    .course-topics { list-style: none; margin-top: .4rem; }
-    .course-topics li {
-      font-size: .8rem; color: var(--muted); padding: .25rem 0;
-      border-bottom: 1px solid var(--border);
-      display: flex; align-items: center; gap: .5rem;
-    }
-    .course-topics li:last-child { border-bottom: none; }
-    .course-topics li::before { content: '›'; color: var(--accent2); font-weight: 700; }
-    .curriculum-note {
-      background: rgba(124,106,255,.06); border: 1px solid rgba(124,106,255,.2);
-      border-radius: 12px; padding: 1.2rem 1.8rem;
-      display: flex; align-items: center; gap: 1rem;
-      color: var(--muted); font-size: .88rem; margin-top: 2rem;
-    }
-    .curriculum-note span { font-size: 1.3rem; flex-shrink: 0; }
-
-    /* ── REVIEWS ── */
-    #reviews { background: var(--bg2); }
-    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-    .review-card {
-      background: var(--card); border: 1px solid var(--border);
-      border-radius: 16px; padding: 2rem;
-      position: relative;
-      transition: border-color .3s;
-    }
-    .review-card:hover { border-color: rgba(124,106,255,.4); }
-    .review-stars { color: #FFB800; font-size: 1rem; margin-bottom: 1rem; letter-spacing: 2px; }
-    .review-text {
-      font-size: .9rem; color: var(--text); line-height: 1.8;
-      margin-bottom: 1.5rem;
-      position: relative;
-    }
-    .review-text::before {
-      content: '"';
-      font-size: 4rem; line-height: 1;
-      color: var(--accent); opacity: .2;
-      position: absolute; top: -1rem; left: -.5rem;
-      font-family: 'Inter', serif;
-    }
-    .reviewer { display: flex; align-items: center; gap: .8rem; }
-    .reviewer-avatar {
-      width: 40px; height: 40px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      display: flex; align-items: center; justify-content: center;
-      font-weight: 700; font-size: .9rem; color: #fff;
-      flex-shrink: 0;
-    }
-    .reviewer-name { font-size: .9rem; font-weight: 600; }
-    .reviewer-role { font-size: .78rem; color: var(--muted); margin-top: .1rem; }
-
-    /* ── CONTACT ── */
-    #contact { background: var(--bg); text-align: center; }
-    .contact-inner { max-width: 600px; margin: 0 auto; }
-    .contact-inner .section-desc { margin: 0 auto 2.5rem; }
-    .contact-box {
-      background: var(--card); border: 1px solid var(--border);
-      border-radius: 20px; padding: 3rem;
-    }
-    .contact-box p { color: var(--muted); margin-bottom: 2rem; line-height: 1.8; }
-    .contact-actions {
-      display: flex; flex-direction: column; gap: .8rem;
-      max-width: 340px; margin: 0 auto;
-    }
-    .contact-btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: .7rem;
-      padding: 1rem 1.5rem; width: 100%;
-      border: none; border-radius: 10px;
-      font-size: 1rem; font-weight: 700; cursor: pointer; text-decoration: none;
-      transition: transform .2s, opacity .2s;
-    }
-    .email-btn {
-      background: #e8e8ec; color: #191919;
-    }
-    .kakao-btn {
-      background: #FEE500; color: #191919;
-      transition: transform .2s, opacity .2s;
-    }
-    .kakao-btn:hover { transform: translateY(-2px); opacity: .9; }
-    .contact-btn:hover { transform: translateY(-2px); opacity: .92; }
-
-    /* ── FOOTER ── */
-    footer {
-      padding: 2rem 6%;
-      border-top: 1px solid var(--border);
-      display: flex; justify-content: space-between; align-items: center;
-      color: var(--muted); font-size: .85rem; flex-wrap: wrap; gap: 1rem;
-    }
-    .footer-logo {
-      font-family: 'Inter', sans-serif; font-weight: 900;
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .logo-tag { display: none; }
-      .logo-divider { display: none; }
-      nav { padding: 0 4%; }
-
-      section { padding: 4rem 5%; }
-
-      #hero {
-        grid-template-columns: 1fr;
-        min-height: auto;
-        padding: 100px 5% 4rem;
-      }
-      .hero-right { display: none; }
-      .hero h1 { font-size: clamp(2rem, 8vw, 3rem); }
-      .hero-sub { font-size: 1rem; }
-      .hero-btns { flex-direction: column; }
-      .btn-primary, .btn-secondary { text-align: center; }
-
-      .stats { grid-template-columns: repeat(2, 1fr); }
-      .stats { column-gap: 1.5rem; }
-      .stat-num { font-size: 2rem; }
-
-      .services-grid { grid-template-columns: 1fr; }
-      .courses-grid { grid-template-columns: 1fr; }
-      .portfolio-grid { grid-template-columns: 1fr; }
-      .reviews-grid { grid-template-columns: 1fr; }
-
-      .contact-box { padding: 2rem 1.5rem; }
-      footer { flex-direction: column; text-align: center; }
-    }
-  </style>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" integrity="sha384-/rJKQnzOkEo+daG0jMjU1IwwY9unxt1NBw3Ef2fmOJ3PW/TfAg2KXVoWwMZQZtw9" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- NAV -->
-<nav>
-  <div class="logo-wrap">
-    <img src="aible-logo(white).png" alt="Aible" style="height:60px; width:auto; object-fit:contain;" />
-    <div class="logo-divider"></div>
-    <div class="logo-tag">Making AI your ability.</div>
-  </div>
-  <ul class="nav-links">
-    <li><a href="index.html">홈</a></li>
-    <li><a href="services.html">서비스</a></li>
-    <li><a href="cases.html" class="active">교육 이력</a></li>
-    <li><a href="portfolio.html">포트폴리오</a></li>
-    <li><a href="#contact">문의</a></li>
-  </ul>
-  <a href="#contact" class="nav-cta">출강 상담</a>
-</nav>
+  <!-- ── NAV ── -->
+  <nav class="site">
+    <a href="index.html" class="logo">Aible<span class="dot">.</span></a>
+    <ul class="nav-links" id="primary-nav">
+      <li><a href="services.html">서비스</a></li>
+      <li><a href="cases.html" class="active" aria-current="page">강의 사례</a></li>
+      <li><a href="portfolio.html">포트폴리오</a></li>
+    </ul>
+    <div style="display: flex; align-items: center;">
+      <a href="https://open.kakao.com/o/sALDb3ki" target="_blank" rel="noopener noreferrer" class="nav-cta">진단 미팅 잡기</a>
+      <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-controls="primary-nav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-<!-- PAGE HEADER -->
-<section class="page-header">
-  <div class="page-header__inner">
-    <span class="page-header__label">Cases</span>
-    <h1>진행한 <span>교육 사례</span></h1>
-    <p>실제 기업·임직원 대상 AI 실무 교육 진행 이력입니다. 커리큘럼·결과 지표·수강생 후기를 함께 공개합니다.</p>
-  </div>
-</section>
+  <!-- ── PAGE HEADER ── -->
+  <section class="page-header">
+    <span class="eyebrow" data-aos="fade-up">CASES</span>
+    <h1 data-aos="fade-up" data-aos-delay="50">
+      어디서 가르쳤고,<br /><span class="em">무엇이 남았는지</span>.
+    </h1>
+    <p class="lead" data-aos="fade-up" data-aos-delay="100">
+      외부 출강·사내 운영·온라인 강의까지 — 진행한 사례를 익명으로 정리했습니다.
+    </p>
+  </section>
 
-
-<!-- CASES -->
-<section id="cases" style="background: var(--bg2);">
-  <div style="display:grid; gap:1.5rem;">
-
-    <!-- 그로스업 (G사) — 2026.05 -->
-    <div class="portfolio-card" style="border-color: rgba(124,106,255,.3);" data-aos="fade-up">
-      <div style="display:flex; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:1.2rem;">
-        <div>
-          <span class="portfolio-tag" style="background:rgba(124,106,255,.12);border-color:rgba(124,106,255,.3);color:var(--accent); margin-bottom:.6rem;">기업 출강</span>
-          <h3 style="font-size:1.2rem;">라이브커머스 운영팀 AI 실무 교육</h3>
-          <p style="color:var(--muted); font-size:.85rem; margin-top:.3rem;">2026.05 · 4시간 · 임직원 9명</p>
-        </div>
-        <div style="text-align:right; flex-shrink:0;">
-          <div style="font-size:1.6rem; font-weight:900; background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">G사</div>
-          <div style="font-size:.75rem; color:var(--muted);">라이브커머스·정부사업</div>
-        </div>
+  <!-- ── NUMBERS (DARK) ── -->
+  <section class="block dark">
+    <div class="inner">
+      <div class="section-head" data-aos="fade-up">
+        <div class="label">NUMBERS</div>
+        <h2>숫자로 본 강의 이력</h2>
+        <p class="sub">외부 출강·사내 운영·온라인 강의 누적 기준입니다.</p>
       </div>
-      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:1rem; margin-bottom:1.2rem;">
-        <div style="background:rgba(255,255,255,.03); border:1px solid var(--border); border-radius:10px; padding:.9rem 1.1rem;">
-          <div style="font-size:.72rem; color:var(--muted); margin-bottom:.4rem;">커리큘럼</div>
-          <div style="font-size:.85rem; line-height:1.7;">AI 이해 → 환경 셋팅 → CO-STAR<br />→ 자동화 봇 → 문서 자동화</div>
+      <div class="numbers">
+        <div class="stat" data-aos="fade-up">
+          <span class="num">4.5<small style="font-size:1.2rem; color: rgba(255,255,255,0.7);">/5</small></span>
+          <span class="label-sm">강의 만족도 평균 (외부 출강 기준)</span>
         </div>
-        <div style="background:rgba(255,255,255,.03); border:1px solid var(--border); border-radius:10px; padding:.9rem 1.1rem;">
-          <div style="font-size:.72rem; color:var(--muted); margin-bottom:.4rem;">실습 결과물</div>
-          <div style="font-size:.85rem; line-height:1.7;">시트 자동 입력 + 슬랙 알림 봇<br />사업기획서·발표자료 자동화</div>
+        <div class="stat" data-aos="fade-up" data-aos-delay="50">
+          <span class="num">+50</span>
+          <span class="label-sm">추천 지수 NPS</span>
         </div>
-        <div style="background:rgba(255,255,255,.03); border:1px solid var(--border); border-radius:10px; padding:.9rem 1.1rem;">
-          <div style="font-size:.72rem; color:var(--muted); margin-bottom:.4rem;">결과</div>
-          <div style="font-size:.85rem; line-height:1.7;">만족도 <strong style="color:var(--accent);">4.5 / 5</strong><br />NPS <strong style="color:var(--accent);">+50</strong></div>
+        <div class="stat" data-aos="fade-up" data-aos-delay="100">
+          <span class="num">100<small style="font-size:1.2rem; color: rgba(255,255,255,0.7);">%</small></span>
+          <span class="label-sm">사후 질문 채널 운영율</span>
         </div>
-      </div>
-
-      <!-- 수강생 후기 -->
-      <div style="margin-top:1.2rem; padding-top:1.4rem; border-top:1px dashed var(--border);">
-        <div style="font-size:.72rem; color:var(--muted); margin-bottom:1rem; letter-spacing:.04em; text-transform: uppercase;">수강생 후기 <span style="text-transform: none; letter-spacing: 0; color: var(--muted); font-weight: 400;">(이름은 익명 처리)</span></div>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:.9rem;">
-          <div style="background:rgba(255,255,255,.03); border-left:3px solid var(--accent); padding:.9rem 1.1rem; border-radius:0 8px 8px 0;">
-            <p style="font-size:.85rem; line-height:1.6; color:var(--text); margin-bottom:.6rem;">"어떻게 내 업무범위에 적용해야하지? 라는 <strong style="color:var(--accent);">길의 첫걸음의 시작</strong>을 하게해주셨습니다"</p>
-            <p style="font-size:.72rem; color:var(--muted);">— G사 PM 김OO</p>
-          </div>
-          <div style="background:rgba(255,255,255,.03); border-left:3px solid var(--accent2); padding:.9rem 1.1rem; border-radius:0 8px 8px 0;">
-            <p style="font-size:.85rem; line-height:1.6; color:var(--text); margin-bottom:.6rem;">"선생님 재밌고 <strong style="color:var(--accent2);">귀에 쏙쏙</strong> 들어오게 강의해주셔서 너무 좋았습니다"</p>
-            <p style="font-size:.72rem; color:var(--muted);">— G사 매니저 박OO</p>
-          </div>
-          <div style="background:rgba(255,255,255,.03); border-left:3px solid var(--accent); padding:.9rem 1.1rem; border-radius:0 8px 8px 0;">
-            <p style="font-size:.85rem; line-height:1.6; color:var(--text); margin-bottom:.6rem;">"처음이라 장벽이 높았는데 <strong style="color:var(--accent);">쉽게 설명해주셔서</strong> 너무 감사합니다"</p>
-            <p style="font-size:.72rem; color:var(--muted);">— G사 마케터 이OO</p>
-          </div>
-          <div style="background:rgba(255,255,255,.03); border-left:3px solid var(--accent2); padding:.9rem 1.1rem; border-radius:0 8px 8px 0;">
-            <p style="font-size:.85rem; line-height:1.6; color:var(--text); margin-bottom:.6rem;">"AI의 기본 개념과 활용을 너무 많이 해보고 <strong style="color:var(--accent2);">재밌게</strong> 할 수 있었습니다"</p>
-            <p style="font-size:.72rem; color:var(--muted);">— G사 사원 정OO</p>
-          </div>
+        <div class="stat" data-aos="fade-up" data-aos-delay="150">
+          <span class="num">3+</span>
+          <span class="label-sm">외부 의뢰 조직 (사내 별도)</span>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- SK텔레콤 — 2024.05 -->
-    <div class="portfolio-card" style="border-color: rgba(124,106,255,.3);" data-aos="fade-up">
-      <div style="display:flex; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:1.2rem;">
-        <div>
-          <span class="portfolio-tag" style="background:rgba(124,106,255,.12);border-color:rgba(124,106,255,.3);color:var(--accent); margin-bottom:.6rem;">기업 출강</span>
-          <h3 style="font-size:1.2rem;">SK텔레콤 임직원 생성형 AI 활용 교육</h3>
-          <p style="color:var(--muted); font-size:.85rem; margin-top:.3rem;">2024.05 · 4시간 · 임직원 대상</p>
-        </div>
-        <div style="text-align:right; flex-shrink:0;">
-          <div style="font-size:1.6rem; font-weight:900; background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">SKT</div>
-          <div style="font-size:.75rem; color:var(--muted);">SK텔레콤</div>
-        </div>
+  <!-- ── AGENCY LIST (anonymized) ── -->
+  <section class="block">
+    <div class="inner">
+      <div class="section-head" data-aos="fade-up">
+        <div class="label">CLIENTS</div>
+        <h2>강의를 진행한 조직</h2>
+        <p class="sub">B2B 영업 관행에 따라 약식으로 표기합니다. 일부는 동의 후 실명 공개 예정.</p>
       </div>
-      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:1rem; margin-bottom:1.2rem;">
-        <div style="background:rgba(255,255,255,.03); border:1px solid var(--border); border-radius:10px; padding:.9rem 1.1rem;">
-          <div style="font-size:.72rem; color:var(--muted); margin-bottom:.4rem;">커리큘럼</div>
-          <div style="font-size:.85rem; line-height:1.7;">AI 개념 이해 → ChatGPT 실전 활용<br />→ AI 도구 적용 → 현업 전략</div>
+      <div class="agency-grid">
+        <div class="agency" data-aos="fade-up">
+          <div class="a-name">통신사 S사</div>
+          <div class="a-meta">대기업 임직원 대상<br />ChatGPT 실무 활용 교육</div>
+          <span class="a-tag">외부 출강</span>
         </div>
-        <div style="background:rgba(255,255,255,.03); border:1px solid var(--border); border-radius:10px; padding:.9rem 1.1rem;">
-          <div style="font-size:.72rem; color:var(--muted); margin-bottom:.4rem;">직접 개발 프레임워크</div>
-          <div style="font-size:.85rem; line-height:1.7;"><strong style="color:var(--accent);">CORE</strong> — Context · Output<br />Reference · Example</div>
+        <div class="agency" data-aos="fade-up" data-aos-delay="40">
+          <div class="a-name">라이브커머스 G사</div>
+          <div class="a-meta">PM·디자이너·개발자 합반<br />부서별 적용 워크북 동반</div>
+          <span class="a-tag">외부 출강</span>
         </div>
-        <div style="background:rgba(255,255,255,.03); border:1px solid var(--border); border-radius:10px; padding:.9rem 1.1rem;">
-          <div style="font-size:.72rem; color:var(--muted); margin-bottom:.4rem;">결과</div>
-          <div style="font-size:.85rem; line-height:1.7;">만족도 <strong style="color:var(--accent);">4.7 / 5</strong><br />NPS <strong style="color:var(--accent);">+55</strong></div>
+        <div class="agency" data-aos="fade-up" data-aos-delay="80">
+          <div class="a-name">IT 유통회사 P사</div>
+          <div class="a-meta">사내 정기 교육 시리즈<br />중급 → 고급 단계 운영 중</div>
+          <span class="a-tag">사내 운영</span>
         </div>
-      </div>
-
-      <!-- 수강생 후기 -->
-      <div style="margin-top:1.2rem; padding-top:1.4rem; border-top:1px dashed var(--border);">
-        <div style="font-size:.72rem; color:var(--muted); margin-bottom:1rem; letter-spacing:.04em; text-transform: uppercase;">수강생 후기 <span style="text-transform: none; letter-spacing: 0; color: var(--muted); font-weight: 400;">(이름은 익명 처리)</span></div>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:.9rem;">
-          <div style="background:rgba(255,255,255,.03); border-left:3px solid var(--accent); padding:.9rem 1.1rem; border-radius:0 8px 8px 0;">
-            <p style="font-size:.85rem; line-height:1.6; color:var(--text); margin-bottom:.6rem;">"ChatGPT를 막연히 알고만 있었는데, <strong style="color:var(--accent);">업무에 어떻게 적용할지 명확</strong>해졌어요"</p>
-            <p style="font-size:.72rem; color:var(--muted);">— SKT 매니저 강OO</p>
-          </div>
-          <div style="background:rgba(255,255,255,.03); border-left:3px solid var(--accent2); padding:.9rem 1.1rem; border-radius:0 8px 8px 0;">
-            <p style="font-size:.85rem; line-height:1.6; color:var(--text); margin-bottom:.6rem;">"프롬프트 작성법이 <strong style="color:var(--accent2);">체계적이라 바로 응용</strong> 가능했습니다"</p>
-            <p style="font-size:.72rem; color:var(--muted);">— SKT 책임 윤OO</p>
-          </div>
-          <div style="background:rgba(255,255,255,.03); border-left:3px solid var(--accent); padding:.9rem 1.1rem; border-radius:0 8px 8px 0;">
-            <p style="font-size:.85rem; line-height:1.6; color:var(--text); margin-bottom:.6rem;">"AI 도구 비교를 통해 적합한 도구를 <strong style="color:var(--accent);">선택할 안목</strong>이 생겼습니다"</p>
-            <p style="font-size:.72rem; color:var(--muted);">— SKT 사원 한OO</p>
-          </div>
-          <div style="background:rgba(255,255,255,.03); border-left:3px solid var(--accent2); padding:.9rem 1.1rem; border-radius:0 8px 8px 0;">
-            <p style="font-size:.85rem; line-height:1.6; color:var(--text); margin-bottom:.6rem;">"현업 적용 사례 중심이라 <strong style="color:var(--accent2);">부담 없이 따라갈</strong> 수 있었어요"</p>
-            <p style="font-size:.72rem; color:var(--muted);">— SKT 매니저 조OO</p>
-          </div>
+        <div class="agency" data-aos="fade-up" data-aos-delay="120">
+          <div class="a-name">온라인 강의 플랫폼</div>
+          <div class="a-meta">비개발자 대상 AI 활용 강의<br />자동 운영 중</div>
+          <span class="a-tag">온라인</span>
         </div>
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- ── FEATURED CASE ── -->
+  <section class="block" style="background: var(--bg-soft);">
+    <div class="inner">
+      <div class="section-head" data-aos="fade-up">
+        <div class="label">FEATURED CASES</div>
+        <h2>대표 사례 2건</h2>
+        <p class="sub">외부 정식 B2B 출강 + 대기업 임직원 교육 — 만족도·NPS·지속성 모두 입증된 케이스.</p>
+      </div>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="contact-inner">
-    <p class="section-label" data-aos="fade-up">Contact</p>
-    <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">교육 문의하기</h2>
-    <p class="section-desc" data-aos="fade-up" data-aos-delay="100">기업 출강, 개인 코칭, 워크샵 모두 문의 가능합니다.</p>
-    <div class="contact-box" data-aos="fade-up" data-aos-delay="200">
-      <p>문의 내용(교육 대상, 인원, 희망 일정)을 남겨주시면<br />빠르게 답변 드리겠습니다.</p>
-      <div class="contact-actions">
-        <a href="mailto:hello@aible-edu.co.kr" class="contact-btn email-btn" target="_blank" rel="noopener noreferrer" aria-label="이메일로 출강 상담 문의하기">
-          📧 hello@aible-edu.co.kr
-        </a>
-        <a href="https://open.kakao.com/o/sALDb3ki" class="contact-btn kakao-btn" target="_blank" rel="noopener noreferrer" aria-label="카카오 오픈채팅으로 출강 상담 문의하기">
-          💬 카카오 오픈채팅 문의
-        </a>
+      <div class="program-list">
+        <article class="program" data-aos="fade-up">
+          <div class="program-cover cover-b">
+            <span class="program-cat-badge">라이브커머스 G사</span>
+            <svg class="bg-illust" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <radialGradient id="fc1" cx="80%" cy="20%" r="65%">
+                  <stop offset="0%" stop-color="#d4c7ff" stop-opacity="0.55"/>
+                  <stop offset="100%" stop-color="#5b3df5" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <rect width="600" height="400" fill="url(#fc1)"/>
+              <g stroke="#fff" stroke-opacity="0.22" stroke-width="1" fill="none">
+                <path d="M0 320 Q150 250 300 320 T 600 320"/>
+                <path d="M0 280 Q150 210 300 280 T 600 280"/>
+                <path d="M0 240 Q150 170 300 240 T 600 240"/>
+              </g>
+              <g fill="#fff" fill-opacity="0.92">
+                <circle cx="180" cy="170" r="38" fill="#fff" fill-opacity="0.12"/>
+                <circle cx="180" cy="170" r="22" fill="#fff" fill-opacity="0.2"/>
+                <circle cx="180" cy="170" r="9"/>
+              </g>
+            </svg>
+          </div>
+          <div class="program-content">
+            <div class="program-tags">
+              <span class="ptag">#실무진_전사</span>
+              <span class="ptag">#합반_운영</span>
+              <span class="ptag">#사후_지원</span>
+            </div>
+            <h3>실무진 AI 활용 정식 출강</h3>
+            <p class="sub">PM·디자이너·개발자가 모두 모인 합반 교육. 부서별 적용 예시 워크북을 동반 제공했고, 강의 후 1개월간 질문 채널을 운영했습니다.</p>
+            <ul class="program-points">
+              <li><span class="ppt-num">결과</span><span>만족도 4.5/5.0 · NPS +50 · 강의 다음 날부터 팀 메신저에 도구 사용 확산</span></li>
+              <li><span class="ppt-num">설계</span><span>인터뷰 → 부서별 시나리오 추출 → 합반에서 부서별 실습 동시 진행</span></li>
+              <li><span class="ppt-num">사후</span><span>1개월 질문 채널 운영 · 도입 점검 미팅 1회</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="program" data-aos="fade-up" data-aos-delay="80">
+          <div class="program-cover cover-c">
+            <span class="program-cat-badge">통신사 S사</span>
+            <svg class="bg-illust" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <radialGradient id="fc2" cx="50%" cy="50%" r="60%">
+                  <stop offset="0%" stop-color="#7c5cff" stop-opacity="0.45"/>
+                  <stop offset="100%" stop-color="#14102a" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <rect width="600" height="400" fill="url(#fc2)"/>
+              <g stroke="#fff" stroke-opacity="0.22" stroke-width="1" fill="none">
+                <circle cx="300" cy="200" r="60"/>
+                <circle cx="300" cy="200" r="110"/>
+                <circle cx="300" cy="200" r="160"/>
+                <line x1="100" y1="200" x2="500" y2="200"/>
+                <line x1="300" y1="40" x2="300" y2="360"/>
+                <line x1="180" y1="80" x2="420" y2="320"/>
+                <line x1="420" y1="80" x2="180" y2="320"/>
+              </g>
+              <g fill="#fff" fill-opacity="0.95">
+                <circle cx="300" cy="200" r="8"/>
+                <circle cx="180" cy="80" r="3"/>
+                <circle cx="420" cy="80" r="3"/>
+                <circle cx="180" cy="320" r="3"/>
+                <circle cx="420" cy="320" r="3"/>
+                <circle cx="100" cy="200" r="3"/>
+                <circle cx="500" cy="200" r="3"/>
+              </g>
+            </svg>
+          </div>
+          <div class="program-content">
+            <div class="program-tags">
+              <span class="ptag">#대기업_임직원</span>
+              <span class="ptag">#사후_1개월_채널</span>
+              <span class="ptag">#실무_정착</span>
+            </div>
+            <h3>대기업 임직원 AI 활용 교육</h3>
+            <p class="sub">임직원 대상 ChatGPT·자동화 도구 활용 교육. 강의 종료 후에도 한 달간 질문 채널을 운영하면서 실무 정착까지 동행한 케이스.</p>
+            <ul class="program-points">
+              <li><span class="ppt-num">결과</span><span>NPS +50 · 강의 후 도구 사용 보고 다수 접수 · 후속 의뢰로 연결</span></li>
+              <li><span class="ppt-num">설계</span><span>직무별 시나리오 추출 → 반편성 후 단계별 운영 · 실습 데이터 사내 자료로 교체</span></li>
+              <li><span class="ppt-num">사후</span><span>1개월 질문 채널 운영 · 도입 점검 미팅 · 사례집 보고서 제공</span></li>
+            </ul>
+          </div>
+        </article>
+
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer>
-  <div style="display:flex; align-items:center;">
-    <img src="aible-logo(white).png" alt="Aible" style="height:44px; width:auto; object-fit:contain;" />
-    <span style="margin-left:1rem;">Making AI your ability.</span>
-  </div>
-  <div>© 2026 Aible. All rights reserved. &nbsp;|&nbsp; <a href="https://aible-edu.co.kr" target="_blank" rel="noopener noreferrer" style="color:#888;">aible-edu.co.kr</a></div>
-</footer>
+  <!-- ── TESTIMONIALS (compact) ── -->
+  <section class="block">
+    <div class="inner">
+      <div class="section-head" data-aos="fade-up">
+        <div class="label">IN PRACTICE</div>
+        <h2>강의 후 받은 이야기</h2>
+        <p class="sub">교육 종료 후 직접 보내주신 피드백을 익명으로 옮겨 적었습니다.</p>
+      </div>
+      <div class="quotes">
 
-<script>
-  function filterCourse(level, btn) {
-    document.querySelectorAll('.level-tab').forEach(t => t.classList.remove('active'));
-    btn.classList.add('active');
-    document.querySelectorAll('.course-card').forEach(card => {
-      if (level === 'all' || card.dataset.level === level) {
-        card.classList.remove('hidden');
-      } else {
-        card.classList.add('hidden');
+        <div class="quote" data-aos="fade-up">
+          <span class="qmark">"</span>
+          <p class="text">
+            ChatGPT 교육 받았을 때랑 차원이 달랐어요. 우리 팀 PM·디자이너·개발자가 각자 어떻게 써야 하는지
+            <b>전부 다른 사례로</b> 설명해주셔서, 강의 다음 날부터 팀에 자연스럽게 퍼졌습니다.
+          </p>
+          <div class="meta">
+            <div class="who">
+              교육 담당자
+              <small>라이브커머스 G사</small>
+            </div>
+            <div class="score">4.5 / 5</div>
+          </div>
+          <div class="situation">외부 정식 출강 · PM·디자이너·개발자 합반 운영</div>
+        </div>
+
+        <div class="quote" data-aos="fade-up" data-aos-delay="80">
+          <span class="qmark">"</span>
+          <p class="text">
+            강의 끝나고도 한 달 동안 질문 채널을 운영해주신 게 가장 컸어요.
+            <b>교육 효과가 끊기지 않고</b> 실무로 그대로 이어졌습니다. 다른 교육에선 못 받아본 경험이에요.
+          </p>
+          <div class="meta">
+            <div class="who">
+              교육 운영자
+              <small>통신사 S사</small>
+            </div>
+            <div class="score">NPS +50</div>
+          </div>
+          <div class="situation">대기업 임직원 교육 · 사후 1개월 질문 채널 운영</div>
+        </div>
+
+        <div class="quote" data-aos="fade-up" data-aos-delay="160">
+          <span class="qmark">"</span>
+          <p class="text">
+            커리큘럼이 <b>우리 매장 업무에 그대로 맞춰져</b> 있어서 듣자마자 적용 가능했어요.
+            다른 강의는 "그래서 뭐 하라는 거지" 였는데, 이건 강의 끝나고 바로 써먹게 됩니다.
+          </p>
+          <div class="meta">
+            <div class="who">
+              매니저
+              <small>IT 유통회사 P사</small>
+            </div>
+            <div class="score">재의뢰 진행</div>
+          </div>
+          <div class="situation">정기 사내 교육 · 중급 → 고급 단계 운영 중</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BAND ── -->
+  <section class="cta-band-wrap">
+    <div class="cta-band" data-aos="fade-up">
+      <h2>우리 조직에 맞는 사례, 함께 만들어볼까요?</h2>
+      <p>지금까지 진행한 사례와 비슷한 결과를 우리 조직에 맞춰 그대로 가져갈 수 있습니다.</p>
+      <div class="cta-row">
+        <a href="https://open.kakao.com/o/sALDb3ki" target="_blank" rel="noopener noreferrer" class="btn-primary">진단 미팅 잡기 →</a>
+        <a href="services.html" class="btn-ghost">프로그램 자세히 보기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site">
+    <div class="foot-inner">
+      <div class="foot-brand">
+        <div class="brand">Aible<span style="color: var(--accent);">.</span></div>
+        <div class="tagline">AI를 능력으로 만드는 일에 진심입니다.</div>
+        <div class="biz-info">
+          상호 스튜디오닷닷<span class="sep">·</span>사업자등록번호 480-05-03402<br />
+          © 2026 Aible. All rights reserved.
+        </div>
+      </div>
+      <div class="foot-links">
+        <a href="mailto:hello@aible-edu.co.kr">hello@aible-edu.co.kr</a>
+        <a href="https://open.kakao.com/o/sALDb3ki" target="_blank" rel="noopener noreferrer">카카오 오픈채팅</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" integrity="sha384-n1AULnKdMJlK1oQCLNDL9qZsDgXtH6jRYFCpBtWFc+a9Yve0KSoMn575rk755NJZ" crossorigin="anonymous"></script>
+  <script>
+    AOS.init({ duration: 600, once: true, offset: 60 });
+
+    // Mobile nav toggle
+    (function () {
+      const toggle = document.querySelector('.nav-toggle');
+      const links = document.querySelector('.nav-links');
+      if (!toggle || !links) return;
+      function setOpen(open) {
+        links.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
       }
-    });
-  }
-</script>
-
-<script>
-  const canvas = document.getElementById('particles');
-  const ctx = canvas.getContext('2d');
-
-  function resize() {
-    canvas.width  = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;
-  }
-  resize();
-  window.addEventListener('resize', resize);
-
-  const DOTS = 60;
-  const dots = Array.from({ length: DOTS }, () => ({
-    x: Math.random() * canvas.width,
-    y: Math.random() * canvas.height,
-    r: Math.random() * 1.5 + 0.5,
-    vx: (Math.random() - 0.5) * 0.4,
-    vy: (Math.random() - 0.5) * 0.4,
-    color: Math.random() > 0.5 ? '124,106,255' : '0,212,255',
-  }));
-
-  function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    dots.forEach(d => {
-      d.x += d.vx; d.y += d.vy;
-      if (d.x < 0 || d.x > canvas.width)  d.vx *= -1;
-      if (d.y < 0 || d.y > canvas.height) d.vy *= -1;
-
-      ctx.beginPath();
-      ctx.arc(d.x, d.y, d.r, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(${d.color},0.7)`;
-      ctx.fill();
-    });
-
-    // 가까운 점끼리 선 연결
-    for (let i = 0; i < dots.length; i++) {
-      for (let j = i + 1; j < dots.length; j++) {
-        const dx = dots[i].x - dots[j].x;
-        const dy = dots[i].y - dots[j].y;
-        const dist = Math.sqrt(dx*dx + dy*dy);
-        if (dist < 120) {
-          ctx.beginPath();
-          ctx.moveTo(dots[i].x, dots[i].y);
-          ctx.lineTo(dots[j].x, dots[j].y);
-          ctx.strokeStyle = `rgba(124,106,255,${0.15 * (1 - dist/120)})`;
-          ctx.lineWidth = 0.5;
-          ctx.stroke();
-        }
-      }
-    }
-    requestAnimationFrame(draw);
-  }
-  draw();
-</script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({ duration: 650, once: true, offset: 60, easing: 'ease-out-cubic' });
-  lucide.createIcons();
-</script>
+      toggle.addEventListener('click', () => setOpen(!links.classList.contains('open')));
+      links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') setOpen(false); });
+    })();
+  </script>
 </body>
 </html>
