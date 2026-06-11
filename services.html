@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>서비스 — Aible · AI 실무 교육 프로그램</title>
-  <meta name="description" content="기업 출강, 개인 코칭, 도입 컨설팅 — Aible의 AI 실무 교육 프로그램과 진행 방식을 확인하세요." />
+  <meta name="description" content="기업 출강, 1:1 코칭, 도입 컨설팅 — Aible의 AI 실무 교육 프로그램과 진행 방식을 확인하세요." />
   <meta name="keywords" content="AI 교육 프로그램, 기업 출강, 개인 코칭, AI 컨설팅, ChatGPT 교육, Claude 교육, Aible" />
   <link rel="canonical" href="https://aible-edu.co.kr/services.html" />
 
@@ -12,21 +12,25 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://aible-edu.co.kr/services.html" />
   <meta property="og:title" content="서비스 — Aible · AI 실무 교육 프로그램" />
-  <meta property="og:description" content="기업 출강, 개인 코칭, 도입 컨설팅 — Aible의 AI 실무 교육 프로그램과 진행 방식을 확인하세요." />
+  <meta property="og:description" content="기업 출강, 1:1 코칭, 도입 컨설팅 — Aible의 AI 실무 교육 프로그램과 진행 방식을 확인하세요." />
   <meta property="og:image" content="https://aible-edu.co.kr/og-image.jpg" />
   <meta property="og:locale" content="ko_KR" />
 
-  <!-- Pretendard + Inter -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" />
 
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" integrity="sha384-/rJKQnzOkEo+daG0jMjU1IwwY9unxt1NBw3Ef2fmOJ3PW/TfAg2KXVoWwMZQZtw9" crossorigin="anonymous" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0916'/%3E%3Ctext x='32' y='45' font-family='Inter,sans-serif' font-size='34' font-weight='800' fill='%237c5cff' text-anchor='middle'%3EA.%3C/text%3E%3C/svg%3E" />
+  <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <div id="progress" aria-hidden="true"></div>
+  <div class="bg-stage" aria-hidden="true"></div>
+  <div class="hero-spot" aria-hidden="true"></div>
 
   <!-- ── NAV ── -->
   <nav class="site">
@@ -44,264 +48,146 @@
     </div>
   </nav>
 
-  <!-- ── PAGE HEADER ── -->
-  <section class="page-header">
-    <span class="eyebrow" data-aos="fade-up">SERVICES</span>
-    <h1 data-aos="fade-up" data-aos-delay="50">
-      한 가지 강의가 아니라,<br /><span class="em">한 흐름</span>으로 제공합니다.
-    </h1>
-    <p class="lead" data-aos="fade-up" data-aos-delay="100">
-      조직 진단부터 강의·도입·정착까지. 단계마다 빠지지 않는 지점이 있습니다.
-    </p>
+  <!-- ── PAGE HERO ── -->
+  <section class="block" style="padding-top: 8rem; padding-bottom: 3rem;">
+    <div class="inner">
+      <div class="section-head reveal">
+        <div class="label">Services</div>
+        <h1 style="font-size: clamp(2rem, 4.5vw, 3.2rem); margin-bottom: 1.4rem;">한 가지 강의가 아니라,<br />한 흐름으로 제공합니다.</h1>
+        <p class="sub" style="max-width: 580px;">조직 진단부터 강의·도입·정착까지. 단계마다 빠지지 않는 지점이 있습니다.</p>
+      </div>
+      <div class="cta-row reveal" style="justify-content: center;">
+        <a href="https://open.kakao.com/o/sALDb3ki" target="_blank" rel="noopener noreferrer" class="btn-primary">진단 미팅 잡기 →</a>
+        <a href="cases.html" class="btn-ghost">강의 사례 보기</a>
+      </div>
+    </div>
   </section>
 
   <!-- ── PROGRAMS (Detailed) ── -->
   <section class="block">
     <div class="inner">
-      <div class="section-head" data-aos="fade-up">
-        <div class="label">WHAT WE DO</div>
+      <div class="section-head reveal">
+        <div class="label">What We Do</div>
         <h2>3가지 프로그램</h2>
         <p class="sub">모든 프로그램은 인터뷰 후 조직별로 새로 설계합니다.</p>
       </div>
-      <div class="program-list">
-
-        <article class="program" data-aos="fade-up">
-          <div class="program-cover cover-a">
-            <span class="program-cat-badge">기업 출강</span>
-            <svg class="bg-illust" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <defs>
-                <radialGradient id="sa1" cx="20%" cy="30%" r="60%">
-                  <stop offset="0%" stop-color="#a89dff" stop-opacity="0.55"/>
-                  <stop offset="100%" stop-color="#5b3df5" stop-opacity="0"/>
-                </radialGradient>
-              </defs>
-              <rect width="600" height="400" fill="url(#sa1)"/>
-              <g stroke="#fff" stroke-opacity="0.18" stroke-width="1" fill="none">
-                <circle cx="430" cy="120" r="60"/>
-                <circle cx="430" cy="120" r="100"/>
-                <circle cx="430" cy="120" r="140"/>
-              </g>
-              <g fill="#fff" fill-opacity="0.85">
-                <circle cx="430" cy="120" r="8"/>
-              </g>
-            </svg>
-          </div>
-          <div class="program-content">
-            <div class="program-tags">
-              <span class="ptag">#부서별_재설계</span>
-              <span class="ptag">#실제_도구_실습</span>
-              <span class="ptag">#1~16시간</span>
-            </div>
-            <h3>기업 출강</h3>
-            <p class="sub">실무진 대상 AI 활용 교육. 조직의 업무 흐름에 맞춰 커리큘럼을 매번 새로 설계합니다.</p>
-            <ul class="program-points">
-              <li><span class="ppt-num">대상</span><span>현업 실무진 · 팀장 · 임직원 전반 (10~100명 권장)</span></li>
-              <li><span class="ppt-num">시간</span><span>1회 1~16시간 · 반복 운영 가능</span></li>
-              <li><span class="ppt-num">결과물</span><span>강의 자료 · 부서별 적용 예시 워크북 · 사후 질문 채널</span></li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="program" data-aos="fade-up">
-          <div class="program-cover cover-b">
-            <span class="program-cat-badge">개인 코칭</span>
-            <svg class="bg-illust" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <defs>
-                <radialGradient id="sb1" cx="80%" cy="20%" r="65%">
-                  <stop offset="0%" stop-color="#d4c7ff" stop-opacity="0.55"/>
-                  <stop offset="100%" stop-color="#5b3df5" stop-opacity="0"/>
-                </radialGradient>
-              </defs>
-              <rect width="600" height="400" fill="url(#sb1)"/>
-              <g fill="#fff" fill-opacity="0.85">
-                <circle cx="180" cy="170" r="38" fill="#fff" fill-opacity="0.12"/>
-                <circle cx="180" cy="170" r="22" fill="#fff" fill-opacity="0.2"/>
-                <circle cx="180" cy="170" r="9"/>
-              </g>
-            </svg>
-          </div>
-          <div class="program-content">
-            <div class="program-tags">
-              <span class="ptag">#1:1_맞춤</span>
-              <span class="ptag">#결과물_제작</span>
-              <span class="ptag">#실전_중심</span>
-            </div>
-            <h3>개인 코칭</h3>
-            <p class="sub">본인 업무 한 가지를 정해 실제로 자동화되는 결과물까지 함께 만드는 1:1 트레이닝입니다.</p>
-            <ul class="program-points">
-              <li><span class="ppt-num">대상</span><span>실무자 · 1인 사업자 · 임원 (1인 ~ 소규모 팀)</span></li>
-              <li><span class="ppt-num">시간</span><span>주 1회 1~2시간 · 4주~8주 권장</span></li>
-              <li><span class="ppt-num">결과물</span><span>본인 업무용 프롬프트 세트 · 자동화 도구 (직접 사용 가능)</span></li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="program" data-aos="fade-up">
-          <div class="program-cover cover-c">
-            <span class="program-cat-badge">도입 컨설팅</span>
-            <svg class="bg-illust" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <defs>
-                <radialGradient id="sc1" cx="50%" cy="50%" r="60%">
-                  <stop offset="0%" stop-color="#7c5cff" stop-opacity="0.4"/>
-                  <stop offset="100%" stop-color="#14102a" stop-opacity="0"/>
-                </radialGradient>
-              </defs>
-              <rect width="600" height="400" fill="url(#sc1)"/>
-              <g stroke="#fff" stroke-opacity="0.18" stroke-width="1" fill="none">
-                <path d="M150 140 L 300 80 L 450 140 L 450 280 L 300 340 L 150 280 Z"/>
-                <path d="M225 170 L 300 130 L 375 170 L 375 250 L 300 290 L 225 250 Z"/>
-              </g>
-              <g fill="#fff" fill-opacity="0.9">
-                <circle cx="300" cy="80" r="5"/>
-                <circle cx="300" cy="340" r="5"/>
-              </g>
-            </svg>
-          </div>
-          <div class="program-content">
-            <div class="program-tags">
-              <span class="ptag">#도입_전략</span>
-              <span class="ptag">#프롬프트_표준화</span>
-              <span class="ptag">#장기_운영</span>
-            </div>
-            <h3>도입 컨설팅</h3>
-            <p class="sub">단발 교육이 아닌, 조직에 AI 활용이 정착되는 장기 운영을 같이 만듭니다.</p>
-            <ul class="program-points">
-              <li><span class="ppt-num">대상</span><span>AI 도입을 처음 추진하거나, 도입했지만 정착이 안 된 조직</span></li>
-              <li><span class="ppt-num">기간</span><span>2~6개월 단위 · 점검 사이클 포함</span></li>
-              <li><span class="ppt-num">결과물</span><span>업무 자동화 후보 목록 · 조직 표준 프롬프트 · 도입 운영 가이드</span></li>
-            </ul>
-          </div>
-        </article>
-
+      <div class="programs reveal-group">
+        <div class="prog spot" style="--i:0">
+          <span class="badge">기업 출강</span>
+          <h3>실무진 AI 활용 교육</h3>
+          <p>ChatGPT·Claude·자동화 도구를 조직의 업무 흐름에 맞춰 가르치는 출강 프로그램. 강의 자료의 모든 사례는 실제 운영 중인 도구에서 가져옵니다.</p>
+          <ul>
+            <li><span class="n">대상</span><span>현업 실무진 · 팀장 · 임직원 전반 (10~100명)</span></li>
+            <li><span class="n">시간</span><span>1회 1~16시간 · 반복 운영 가능</span></li>
+            <li><span class="n">결과물</span><span>강의 자료 · 부서별 적용 워크북 · 사후 질문 채널</span></li>
+          </ul>
+          <div class="ptags"><span>#부서별_재설계</span><span>#실제_도구_실습</span><span>#1~16시간</span></div>
+        </div>
+        <div class="prog spot" style="--i:1">
+          <span class="badge">개인 코칭</span>
+          <h3>1:1 AI 트레이닝</h3>
+          <p>본인 업무 한 가지를 정해 실제로 자동화되는 결과물까지 함께 만드는 1:1 트레이닝입니다. 회사 소속·직무와 무관하게 신청 가능.</p>
+          <ul>
+            <li><span class="n">대상</span><span>실무자 · 1인 사업자 · 임원 (1인~소규모)</span></li>
+            <li><span class="n">시간</span><span>주 1회 1~2시간 · 4~8주 권장</span></li>
+            <li><span class="n">결과물</span><span>본인 업무용 프롬프트 세트 · 자동화 도구 (즉시 사용 가능)</span></li>
+          </ul>
+          <div class="ptags"><span>#1:1_집중</span><span>#결과물_제작</span><span>#실전_중심</span></div>
+        </div>
+        <div class="prog spot" style="--i:2">
+          <span class="badge">도입 컨설팅</span>
+          <h3>AI 도입 컨설팅</h3>
+          <p>단발 교육이 아니라 조직에 AI 활용이 정착되는 장기 운영을 같이 만듭니다. 업무 자동화 후보 발굴부터 운영 사이클까지.</p>
+          <ul>
+            <li><span class="n">대상</span><span>AI 도입을 처음 추진하거나, 도입했지만 정착이 안 된 조직</span></li>
+            <li><span class="n">기간</span><span>2~6개월 단위 · 점검 사이클 포함</span></li>
+            <li><span class="n">결과물</span><span>자동화 후보 목록 · 조직 표준 프롬프트 · 도입 운영 가이드</span></li>
+          </ul>
+          <div class="ptags"><span>#도입_전략</span><span>#프롬프트_표준화</span><span>#장기_운영</span></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ── APPROACH (Step 1-2-3 dark) ── -->
-  <section class="block dark">
+  <!-- ── APPROACH (Step 1-2-3) ── -->
+  <section class="block">
     <div class="inner">
-      <div class="section-head" data-aos="fade-up">
-        <div class="label">THE APPROACH</div>
+      <div class="section-head reveal">
+        <div class="label">The Approach</div>
         <h2>진행 방식</h2>
         <p class="sub">의뢰부터 도입 후 운영까지 — 모든 프로그램이 같은 흐름을 따릅니다.</p>
       </div>
-      <div class="steps">
-        <div class="step" data-aos="fade-up">
-          <span class="step-tag">STEP 01</span>
+      <div class="programs reveal-group">
+        <div class="prog spot" style="--i:0">
+          <span class="badge">STEP 01</span>
           <h3>인터뷰 & 진단</h3>
           <p>조직의 업무 흐름·인원·이미 쓰고 있는 도구를 먼저 파악합니다. 한 번에 30~60분, 보통 1~2회 진행합니다.</p>
-          <div class="step-illust" aria-hidden="true">
-            <svg viewBox="0 0 130 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="sv1a" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#a89dff" stop-opacity="0.85"/>
-                  <stop offset="100%" stop-color="#5b3df5" stop-opacity="0.5"/>
-                </linearGradient>
-              </defs>
-              <polygon points="65,12 110,42 92,90 38,90 20,42" fill="url(#sv1a)" opacity="0.85"/>
-              <circle cx="65" cy="55" r="6" fill="#fff" opacity="0.9"/>
-            </svg>
-          </div>
+          <div class="ptags"><span>#비용_없음</span></div>
         </div>
-        <div class="step" data-aos="fade-up" data-aos-delay="80">
-          <span class="step-tag">STEP 02</span>
+        <div class="prog spot" style="--i:1">
+          <span class="badge">STEP 02</span>
           <h3>커리큘럼 설계 & 운영</h3>
           <p>진단 내용에 맞춰 커리큘럼을 새로 짭니다. 실제 운영 중인 도구를 그대로 실습 사례로 사용합니다.</p>
-          <div class="step-illust" aria-hidden="true">
-            <svg viewBox="0 0 130 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="sv2a" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#a89dff" stop-opacity="0.9"/>
-                  <stop offset="100%" stop-color="#5b3df5" stop-opacity="0.55"/>
-                </linearGradient>
-              </defs>
-              <rect x="22" y="34" width="64" height="46" rx="6" fill="url(#sv2a)" opacity="0.55" transform="rotate(-8 54 57)"/>
-              <rect x="34" y="26" width="68" height="50" rx="6" fill="url(#sv2a)" opacity="0.75"/>
-              <rect x="44" y="36" width="48" height="3.5" rx="2" fill="#fff" opacity="0.85"/>
-              <rect x="44" y="44" width="38" height="3.5" rx="2" fill="#fff" opacity="0.6"/>
-              <rect x="44" y="52" width="44" height="3.5" rx="2" fill="#fff" opacity="0.6"/>
-            </svg>
-          </div>
+          <div class="ptags"><span>#조직별_재설계</span></div>
         </div>
-        <div class="step" data-aos="fade-up" data-aos-delay="160">
-          <span class="step-tag">STEP 03</span>
+        <div class="prog spot" style="--i:2">
+          <span class="badge">STEP 03</span>
           <h3>후속 지원 & 정착</h3>
           <p>교육 종료 후에도 일정 기간 동안 질문 채널을 열어두고, 업무 적용 과정에서 막힌 부분을 함께 풉니다.</p>
-          <div class="step-illust" aria-hidden="true">
-            <svg viewBox="0 0 130 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="sv3a" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#a89dff" stop-opacity="0.9"/>
-                  <stop offset="100%" stop-color="#5b3df5" stop-opacity="0.55"/>
-                </linearGradient>
-              </defs>
-              <path d="M52 50 q0 -12 12 -12 h40 q12 0 12 12 v18 q0 12 -12 12 h-10 v10 l-10 -10 h-20 q-12 0 -12 -12 z" fill="url(#sv3a)"/>
-              <text x="84" y="68" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#fff">?</text>
-            </svg>
-          </div>
+          <div class="ptags"><span>#사후_2주~3개월</span></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ── FAQ ── -->
-  <section class="block" style="background: var(--bg-soft);">
+  <section class="block" id="faq" style="background: var(--bg-2);">
     <div class="inner">
-      <div class="section-head" data-aos="fade-up">
+      <div class="section-head reveal">
         <div class="label">FAQ</div>
         <h2>자주 묻는 질문</h2>
         <p class="sub">미팅 전 궁금하신 부분 먼저 확인해보세요.</p>
       </div>
-      <div class="faq">
-        <details class="faq-item" data-aos="fade-up">
+      <div class="faq reveal-group">
+        <details class="faq-item spot" style="--i:0">
+          <summary>비개발자도 따라갈 수 있나요?</summary>
+          <div class="faq-a">네, 수강생 대부분이 비개발자입니다. "처음이라 장벽이 높았는데 쉽게 설명해주셔서"라는 실제 후기처럼, 어려운 용어는 쉬운 예시로 풀고 실습에서 막히는 부분은 사후 질문 채널에서 끝까지 함께 풉니다.</div>
+        </details>
+        <details class="faq-item spot" style="--i:1">
           <summary>견적은 어떻게 결정되나요?</summary>
-          <div class="faq-a">
-            인원·시간·커리큘럼 설계 깊이에 따라 달라집니다. 진단 미팅(30분)을 먼저 진행한 후 조직별 견적을 제안드리며, 이 단계는 비용이 없습니다. 정식 견적은 미팅 후 영업일 1~2일 내 보내드립니다.
-          </div>
+          <div class="faq-a">인원·시간·커리큘럼 설계 깊이에 따라 달라집니다. 진단 미팅(30~60분)은 비용이 없고, 미팅 후 영업일 1~2일 내 조직별 견적을 보내드립니다.</div>
         </details>
-        <details class="faq-item" data-aos="fade-up">
+        <details class="faq-item spot" style="--i:2">
           <summary>의뢰 후 강의까지 얼마나 걸리나요?</summary>
-          <div class="faq-a">
-            진단 미팅부터 강의 진행까지 보통 2~4주가 소요됩니다. 인터뷰·커리큘럼 설계에 1~2주, 자료 준비 및 일정 조율에 1~2주 정도로 잡으시면 됩니다. 긴급 요청 시 단축도 가능합니다.
-          </div>
+          <div class="faq-a">진단 미팅부터 강의 진행까지 보통 2~4주가 소요됩니다. 인터뷰·커리큘럼 설계에 1~2주, 자료 준비 및 일정 조율에 1~2주 정도로 잡으시면 됩니다. 긴급 요청 시 단축도 가능합니다.</div>
         </details>
-        <details class="faq-item" data-aos="fade-up">
+        <details class="faq-item spot" style="--i:3">
           <summary>비대면(온라인) 강의도 가능한가요?</summary>
-          <div class="faq-a">
-            네, Zoom·Google Meet·Teams 모두 진행 경험 있습니다. 다만 실습 비중이 큰 프로그램은 오프라인 권장드리며, 두 가지 혼합(블렌디드) 형식도 자주 운영합니다.
-          </div>
+          <div class="faq-a">네, Zoom·Google Meet·Teams 모두 진행 경험이 있습니다. 실습 비중이 큰 과정은 오프라인을 권장드리고, 두 형식을 섞은 블렌디드 운영도 자주 합니다.</div>
         </details>
-        <details class="faq-item" data-aos="fade-up">
+        <details class="faq-item spot" style="--i:4">
           <summary>강의 인원은 몇 명까지 가능한가요?</summary>
-          <div class="faq-a">
-            기업 출강 기준 10~100명 권장합니다. 실습 효과를 위해 최대 30명 단위 반편성을 추천하며, 대규모일 경우 반복 운영으로 진행합니다. 개인 코칭은 1:1 또는 소규모(2~5명).
-          </div>
+          <div class="faq-a">기업 출강 기준 10~100명 권장합니다. 실습 효과를 위해 최대 30명 단위 반편성을 추천하며, 대규모일 경우 반복 운영으로 진행합니다. 개인 코칭은 1:1 또는 소규모(2~5명).</div>
         </details>
-        <details class="faq-item" data-aos="fade-up">
+        <details class="faq-item spot" style="--i:5">
           <summary>강의 후 지원은 어디까지 받을 수 있나요?</summary>
-          <div class="faq-a">
-            모든 프로그램에 강의 종료 후 최소 2주, 최대 3개월의 질문 채널 운영이 포함됩니다. 도입 컨설팅은 추가로 도입 점검 사이클(월 1회)이 포함됩니다. 자세한 범위는 프로그램별 견적 시 명시됩니다.
-          </div>
+          <div class="faq-a">모든 프로그램에 강의 종료 후 최소 2주, 최대 3개월의 질문 채널 운영이 포함됩니다. 도입 컨설팅은 추가로 도입 점검 사이클(월 1회)이 포함됩니다. 자세한 범위는 프로그램별 견적 시 명시됩니다.</div>
         </details>
-        <details class="faq-item" data-aos="fade-up">
+        <details class="faq-item spot" style="--i:6">
           <summary>세금계산서 발행이 가능한가요?</summary>
-          <div class="faq-a">
-            네, 정식 사업자(상호 스튜디오닷닷 · 사업자등록번호 480-05-03402)로 세금계산서 발행이 가능합니다. 입금 확인 후 영업일 1~2일 내 발행해드립니다.
-          </div>
+          <div class="faq-a">네, 정식 사업자(상호 스튜디오닷닷 · 사업자등록번호 480-05-03402)로 세금계산서 발행이 가능합니다. 입금 확인 후 영업일 1~2일 내 발행해드립니다.</div>
         </details>
       </div>
     </div>
   </section>
 
-  <!-- ── CTA BAND ── -->
-  <section class="cta-band-wrap">
-    <div class="cta-band" data-aos="fade-up">
-      <h2>맞는 프로그램이 보이세요?</h2>
-      <p>30분 진단 미팅 후 조직에 맞는 견적을 보내드립니다. 미팅 자체는 비용 부담 없습니다.</p>
-      <div class="cta-row">
-        <a href="https://open.kakao.com/o/sALDb3ki" target="_blank" rel="noopener noreferrer" class="btn-primary">진단 미팅 잡기 →</a>
-        <a href="cases.html" class="btn-ghost">강의 사례 먼저 보기</a>
-      </div>
+  <!-- ── CTA ── -->
+  <section class="cta-final">
+    <h2 class="reveal">맞는 프로그램이 보이세요?</h2>
+    <p class="reveal">30분 진단 미팅 후 조직에 맞는 견적을 보내드립니다. 미팅 자체는 비용 부담 없습니다.</p>
+    <div class="cta-row reveal">
+      <a id="magnet" href="https://open.kakao.com/o/sALDb3ki" target="_blank" rel="noopener noreferrer" class="btn-primary">진단 미팅 잡기 →</a>
+      <a href="cases.html" class="btn-ghost">강의 사례 먼저 보기</a>
     </div>
   </section>
 
@@ -309,7 +195,7 @@
   <footer class="site">
     <div class="foot-inner">
       <div class="foot-brand">
-        <div class="brand">Aible<span style="color: var(--accent);">.</span></div>
+        <div class="brand">Aible<span style="color: var(--accent-2);">.</span></div>
         <div class="tagline">AI를 능력으로 만드는 일에 진심입니다.</div>
         <div class="biz-info">
           상호 스튜디오닷닷<span class="sep">·</span>사업자등록번호 480-05-03402<br />
@@ -323,24 +209,6 @@
     </div>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" integrity="sha384-n1AULnKdMJlK1oQCLNDL9qZsDgXtH6jRYFCpBtWFc+a9Yve0KSoMn575rk755NJZ" crossorigin="anonymous"></script>
-  <script>
-    AOS.init({ duration: 600, once: true, offset: 60 });
-
-    // Mobile nav toggle
-    (function () {
-      const toggle = document.querySelector('.nav-toggle');
-      const links = document.querySelector('.nav-links');
-      if (!toggle || !links) return;
-      function setOpen(open) {
-        links.classList.toggle('open', open);
-        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-        toggle.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
-      }
-      toggle.addEventListener('click', () => setOpen(!links.classList.contains('open')));
-      links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
-      document.addEventListener('keydown', e => { if (e.key === 'Escape') setOpen(false); });
-    })();
-  </script>
+  <script src="site.js"></script>
 </body>
 </html>

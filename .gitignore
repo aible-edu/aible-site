@@ -1,11 +1,26 @@
 # Internal dev notes (Claude working docs)
 CLAUDE.md
+HANDOFF-renewal.md
+renewal-spec-2026-06-11.md
 
-# Local Netlify config
+# Local Netlify config (stale, 2026-06-02 Cloudflare 이전 완료)
 .netlify/
 
 # macOS
 .DS_Store
 
-# Unused local assets
+# 시안 비교용 / 백업 폴더 (배포 제외)
+preview/
+
+# 원본 강의 사진 (배포엔 img/ 아래 처리본만 사용)
+사진/
+
+# 작업 자료 (설문 원본 등)
+(2026) 마케터 T.H.E AI 교육 과정 만족도 조사 설문.xlsx
+
+# Unused legacy assets (배포 사이트 미사용)
+1.JPG
+2.jpg
 ChatGPT Image*.png
+aible-logo(black).png
+aible-logo(white).png
