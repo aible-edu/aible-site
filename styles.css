@@ -540,27 +540,28 @@ html.js .reveal-group.is-visible > * {
   border-radius: 0;
   box-shadow: none;
 }
-/* 라이브 외부 링크 카드 — 우상단 ↗ 인디케이터 */
-.pcard.live .pcover::after {
-  content: '↗';
-  position: absolute;
-  top: 1rem; right: 1rem;
-  width: 32px; height: 32px;
-  display: inline-flex; align-items: center; justify-content: center;
-  background: rgba(10, 9, 22, 0.72);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: #fff;
-  border-radius: 9px;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.05rem; font-weight: 800;
-  z-index: 2;
-  pointer-events: none;
-  transition: background .2s ease, transform .2s ease;
+/* 라이브 외부 링크 카드 — 본문 하단 "바로가기" 버튼 */
+.pcard .pgo {
+  margin-top: auto;
+  padding-top: 1.2rem;
+  align-self: flex-start;
 }
-.pcard.live:hover .pcover::after {
+.pcard .pgo span {
+  display: inline-flex; align-items: center; gap: .4rem;
+  padding: .55rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(124, 92, 255, 0.35);
+  background: rgba(124, 92, 255, 0.10);
+  color: var(--accent-3);
+  font-size: .85rem; font-weight: 700;
+  letter-spacing: -0.01em;
+  transition: background .15s ease, border-color .15s ease, color .15s ease, transform .15s ease;
+}
+.pcard.live:hover .pgo span {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  transform: translate(2px, -2px);
+  border-color: transparent;
+  color: #fff;
+  transform: translateX(2px);
 }
 .pcover .pmark {
   font-family: 'Inter', 'Pretendard', sans-serif;
