@@ -489,6 +489,92 @@ html.js .reveal-group.is-visible > * {
   padding: .25rem .65rem; border-radius: 999px;
 }
 
+/* ── 포트폴리오 그리드 (이미지 + 본문) ── */
+.pgrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.pcard {
+  background: var(--card);
+  border: 1px solid var(--card-line);
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex; flex-direction: column;
+  transition: border-color .15s ease, transform .15s ease, box-shadow .2s ease;
+  text-decoration: none; color: inherit;
+}
+.pcard:hover {
+  border-color: rgba(124, 92, 255, 0.45);
+  transform: translateY(-3px);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.4);
+}
+.pcover {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.pcover.cov-1 { background: linear-gradient(135deg, #1f1845 0%, #5b3df5 100%); }
+.pcover.cov-2 { background: linear-gradient(135deg, #14102a 0%, #2a1d5c 65%, #6048d8 110%); }
+.pcover.cov-3 { background: linear-gradient(135deg, #20194a 0%, #5b3df5 100%); }
+.pcover.cov-4 { background: linear-gradient(135deg, #0f0d20 0%, #1a1640 50%, #2a1d5c 100%); }
+.pcover.cov-5 { background: linear-gradient(135deg, #2e2370 0%, #7c5cff 100%); }
+.pcover.cov-6 { background: linear-gradient(135deg, #1a1640 0%, #5b3df5 60%, #a89dff 110%); }
+.pcover.cov-7 { background: linear-gradient(135deg, #14102a 0%, #3a2a8a 100%); }
+.pcover.cov-8 { background: linear-gradient(135deg, #2a1d5c 0%, #5b3df5 60%, #d4c7ff 110%); }
+.pcover img {
+  width: 96px; height: 96px;
+  object-fit: contain;
+  border-radius: 22px;
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.45);
+}
+.pcover .pmark {
+  font-family: 'Inter', 'Pretendard', sans-serif;
+  font-size: 3.6rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.92);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  text-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+.pcover .pcat {
+  position: absolute;
+  top: 1rem; left: 1rem;
+  background: rgba(10, 9, 22, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--accent-3);
+  padding: .32rem .8rem;
+  border-radius: 999px;
+  font-size: .72rem; font-weight: 700;
+  letter-spacing: .04em;
+  z-index: 1;
+}
+.pbody {
+  padding: 1.4rem 1.5rem 1.5rem;
+  flex: 1;
+  display: flex; flex-direction: column;
+}
+.pbody h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: .55rem;
+}
+.pbody p {
+  color: var(--text-2);
+  font-size: .92rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 900px) {
+  .pgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .pgrid { grid-template-columns: 1fr; }
+}
+
 /* ── 스티키 프로세스 ── */
 .process { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 4rem; align-items: start; }
 .process-pin { position: sticky; top: 120px; }

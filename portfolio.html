@@ -67,45 +67,98 @@
       <div class="section-head reveal">
         <div class="label">Projects</div>
         <h2>운영 중인 AI 자동화 도구</h2>
-        <p class="sub">분야·형태가 다른 자체 프로젝트 6+. 강의에서 예제로 그대로 사용합니다.</p>
+        <p class="sub">분야·형태가 다른 자체 프로젝트 다수. 강의에서 예제로 그대로 사용합니다.</p>
       </div>
-      <div class="programs reveal-group">
-        <div class="prog spot" style="--i:0">
-          <span class="badge">App Store 정식 출시</span>
-          <h3>월급 실시간 계산 iOS 앱</h3>
-          <p>출근 시각부터 지금까지 누적된 월급을 초 단위로 보여주는 앱. App Store 정식 출시 완료.</p>
-          <div class="ptags"><span>#Swift</span><span>#SwiftUI</span><span>#App_Store</span></div>
-        </div>
-        <div class="prog spot" style="--i:1">
-          <span class="badge">운영 중</span>
-          <h3>멀티 에이전트 종목 분석 시스템</h3>
-          <p>한 개 분석 대상에 대해 다중 에이전트가 동시 분석·점수화. 자동 리포트 생성까지 한 흐름. 누적 52건 분석.</p>
-          <div class="ptags"><span>#Claude_API</span><span>#Python</span><span>#HTML_리포트</span></div>
-        </div>
-        <div class="prog spot" style="--i:2">
-          <span class="badge">운영 중</span>
-          <h3>쇼츠 자동 생성 파이프라인</h3>
-          <p>주제 입력 → 스크립트 생성 → 영상·자막·BGM 합성까지 자동화. 채널 운영 중.</p>
-          <div class="ptags"><span>#Claude_API</span><span>#FFmpeg</span><span>#YouTube_API</span></div>
-        </div>
-        <div class="prog spot" style="--i:3">
-          <span class="badge">사내 운영</span>
-          <h3>B2B 거래명세서 생성기</h3>
-          <p>매장 정보 입력 → 표준 양식의 거래명세서 PDF 자동 생성. 사내 운영 중인 단일 HTML 도구.</p>
-          <div class="ptags"><span>#HTML</span><span>#JavaScript</span><span>#PDF_출력</span></div>
-        </div>
-        <div class="prog spot" style="--i:4">
-          <span class="badge">로컬 운영 중</span>
-          <h3>개인 프로젝트 대시보드</h3>
-          <p>여러 프로젝트의 진행 상태·할 일·메모를 한 곳에서 보고 업데이트할 수 있는 자체 대시보드.</p>
-          <div class="ptags"><span>#Next.js</span><span>#TypeScript</span><span>#Tailwind</span></div>
-        </div>
-        <div class="prog spot" style="--i:5">
-          <span class="badge">사내 운영</span>
-          <h3>현장 콘텐츠 자동 생성 도구</h3>
-          <p>매장 정보·키워드 입력 → 영업용 콘텐츠(이미지·캡션)를 자동 생성하는 사내 도구.</p>
-          <div class="ptags"><span>#Flask</span><span>#Claude_API</span><span>#Pillow</span></div>
-        </div>
+      <div class="pgrid reveal-group">
+
+        <article class="pcard spot" style="--i:0">
+          <div class="pcover cov-1">
+            <span class="pcat">App Store</span>
+            <img src="img/portfolio/salary-meter.png" alt="월급미터기 앱 아이콘" loading="lazy" />
+          </div>
+          <div class="pbody">
+            <h3>월급미터기</h3>
+            <p>출근 시각부터 지금까지 누적된 월급을 초 단위로 보여주는 iOS 앱. App Store 정식 출시.</p>
+          </div>
+        </article>
+
+        <article class="pcard spot" style="--i:1">
+          <div class="pcover cov-2">
+            <span class="pcat">macOS</span>
+            <img src="img/portfolio/swoosh.png" alt="Swoosh 앱 아이콘" loading="lazy" />
+          </div>
+          <div class="pbody">
+            <h3>Swoosh</h3>
+            <p>화면을 베어내며 스트레스를 푸는 macOS 앱. 그은 대로 잘려서 와장창 낙하 + 빛폭발 + 커뮤니티톤 문구.</p>
+          </div>
+        </article>
+
+        <article class="pcard spot" style="--i:2">
+          <div class="pcover cov-3">
+            <span class="pcat">AI Agent</span>
+            <span class="pmark">∑</span>
+          </div>
+          <div class="pbody">
+            <h3>멀티 에이전트 종목 분석 시스템</h3>
+            <p>한 개 분석 대상에 대해 다중 에이전트가 동시 분석·점수화. 자동 리포트 생성까지 한 흐름. 누적 52건.</p>
+          </div>
+        </article>
+
+        <article class="pcard spot" style="--i:3">
+          <div class="pcover cov-4">
+            <span class="pcat">Telegram Bot</span>
+            <span class="pmark">名</span>
+          </div>
+          <div class="pbody">
+            <h3>클로드명함봇</h3>
+            <p>텔레그램에 명함 사진을 보내면 Claude OCR로 자동 정리해 노션에 저장하는 봇. 맥북 상주 운영.</p>
+          </div>
+        </article>
+
+        <article class="pcard spot" style="--i:4">
+          <div class="pcover cov-5">
+            <span class="pcat">Pipeline</span>
+            <span class="pmark">▶</span>
+          </div>
+          <div class="pbody">
+            <h3>쇼츠 자동 생성 파이프라인</h3>
+            <p>주제 입력 → 스크립트 생성 → 영상·자막·BGM 합성까지 자동화. 채널 운영 중.</p>
+          </div>
+        </article>
+
+        <article class="pcard spot" style="--i:5">
+          <div class="pcover cov-6">
+            <span class="pcat">B2B Tool</span>
+            <span class="pmark">₩</span>
+          </div>
+          <div class="pbody">
+            <h3>B2B 거래명세서 생성기</h3>
+            <p>매장 정보 입력 → 표준 양식의 거래명세서 PDF 자동 생성. 사내 운영 중인 단일 HTML 도구.</p>
+          </div>
+        </article>
+
+        <article class="pcard spot" style="--i:6">
+          <div class="pcover cov-7">
+            <span class="pcat">Internal Tool</span>
+            <span class="pmark">⊞</span>
+          </div>
+          <div class="pbody">
+            <h3>개인 프로젝트 대시보드</h3>
+            <p>여러 프로젝트의 진행 상태·할 일·메모를 한 곳에서 보고 업데이트할 수 있는 자체 대시보드.</p>
+          </div>
+        </article>
+
+        <article class="pcard spot" style="--i:7">
+          <div class="pcover cov-8">
+            <span class="pcat">Content Tool</span>
+            <span class="pmark">✎</span>
+          </div>
+          <div class="pbody">
+            <h3>현장 콘텐츠 자동 생성 도구</h3>
+            <p>매장 정보·키워드 입력 → 영업용 콘텐츠(이미지·캡션)를 자동 생성하는 사내 도구.</p>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
