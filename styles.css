@@ -47,7 +47,9 @@ a { color: inherit; }
 /* ── NAV ── */
 nav.site {
   position: sticky; top: 0; z-index: 100;
-  display: flex; align-items: center; justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
   height: 66px; padding: 0 6%;
   background: rgba(10, 9, 22, 0.72);
   backdrop-filter: blur(16px);
@@ -55,6 +57,9 @@ nav.site {
   border-bottom: 1px solid var(--line);
   transition: box-shadow .25s ease;
 }
+nav.site > .logo      { grid-column: 1; justify-self: start; }
+nav.site > .nav-links { grid-column: 2; justify-self: center; }
+nav.site > div        { grid-column: 3; justify-self: end; }
 nav.site.scrolled { box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45); }
 .logo {
   font-family: 'Inter', 'Pretendard', sans-serif;
