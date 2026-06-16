@@ -540,6 +540,28 @@ html.js .reveal-group.is-visible > * {
   border-radius: 0;
   box-shadow: none;
 }
+/* 라이브 외부 링크 카드 — 우상단 ↗ 인디케이터 */
+.pcard.live .pcover::after {
+  content: '↗';
+  position: absolute;
+  top: 1rem; right: 1rem;
+  width: 32px; height: 32px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: rgba(10, 9, 22, 0.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  border-radius: 9px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem; font-weight: 800;
+  z-index: 2;
+  pointer-events: none;
+  transition: background .2s ease, transform .2s ease;
+}
+.pcard.live:hover .pcover::after {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  transform: translate(2px, -2px);
+}
 .pcover .pmark {
   font-family: 'Inter', 'Pretendard', sans-serif;
   font-size: 3.6rem;
