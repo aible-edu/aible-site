@@ -523,7 +523,6 @@ html.js .reveal-group.is-visible > * {
 .pcover.cov-6 { background: linear-gradient(135deg, #1a1640 0%, #5b3df5 60%, #a89dff 110%); }
 .pcover.cov-7 { background: linear-gradient(135deg, #14102a 0%, #3a2a8a 100%); }
 .pcover.cov-8 { background: linear-gradient(135deg, #2a1d5c 0%, #5b3df5 60%, #d4c7ff 110%); }
-.pcover.cov-9 { background: linear-gradient(135deg, #20194a 0%, #4a2fd1 60%, #7c5cff 110%); }
 .pcover img {
   width: 96px; height: 96px;
   object-fit: contain;
